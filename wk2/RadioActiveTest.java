@@ -1,7 +1,13 @@
+
+
 public class RadioActiveTest {
 
     public static double calculateMass(double initialMass, double rateOfDecay, int years) {
-        return 0.0;
+        Substance substance = new Substance(initialMass, rateOfDecay);
+        for (int i = 0; i < years; i++) {
+            substance.decayOneYear();
+        }
+        return substance.getMass();
     }
 
     public static void main(String[] args) {
