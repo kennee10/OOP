@@ -10,11 +10,19 @@ public class BubbleTeaTest {
     }
 
     public static void displaySweetnessTest(BubbleTea cup) {
-
+        if (cup.isTooSweet()) {
+            System.out.println(cup.getBrand() +" is too sweet");
+        } else {
+            System.out.println(cup.getBrand() + " is low in sugar");
+        }
     }
 
     public static void displaySweetnessComparison(BubbleTea cup1, BubbleTea cup2) {
-
+        if (cup1.isSweeterThan(cup2)) {
+            System.out.println(cup1.getBrand() + " is sweeter than " + cup2.getBrand());
+        } else {
+            System.out.println(cup2.getBrand() + " is sweeter than " + cup1.getBrand());
+        }
     }
 
 
