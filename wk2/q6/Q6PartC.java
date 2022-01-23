@@ -45,6 +45,8 @@ public class Q6PartC {
      */
     public static String getFarmerDetails(CommunityGarden garden, int plotNumber) {
         // insert your code here.
+        CommunityGarden myGarden = garden.getPlot(plotNumber);
+        System.out.println(myGarden);
         return ""; // added to make this code compile.
 
     }

@@ -26,7 +26,8 @@ public class Q6PartB {
      */
     public static int getNumSmallLandPlots(CommunityGarden garden, int area) {
         // insert your code here.
-        return 0;
+        int greaterArea = garden.getNumPlotsWithAreaGreaterOrEqualTo(area);
+        return garden.getTotalPlots() - greaterArea;
 
     }
 
