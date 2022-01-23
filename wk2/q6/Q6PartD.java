@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthScrollBarUI;
+
 public class Q6PartD {
     public static void main(String[] args) {
     
@@ -18,6 +20,7 @@ public class Q6PartD {
         System.out.println("Actual  :" + getPercentageOfLeasedPlotsWithCrop(garden, 'F'));
         System.out.println("Note: output may differ slightly due to floating point error.");
         System.out.println();
+        // System.out.println(getPercentageOfLeasedPlotsWithCrop(garden, 'F'));
     }
 
    
@@ -35,8 +38,28 @@ public class Q6PartD {
      *
      * If there is no leased plots, print 0.0.
      * */
+    
     public static double getPercentageOfLeasedPlotsWithCrop(CommunityGarden garden, char category) {
         // insert your code here.
-        return 0.0;
+        int totalPlots = garden.getTotalPlots();
+        // System.out.println(totalPlots);
+        int totalLeasedPlots = 0;
+        int leasedPlotsCategory = 0;
+        for (int i = 1; i < totalPlots+1; i++) {
+            Plot myPlot = garden.getPlot(i);
+            if (myPlot.getFarmer() != null) {
+                totalLeasedPlots++;
+                Crop myCrop = myPlot.getCrop();
+                if (myCrop != null) {
+                    if (myCrop.getCategory() == category) {
+                        leasedPlotsCategory++;
+                    }
+                }
+            }
+        }
+        // System.out.println(totalLeasedPlots);
+        // System.out.println(leasedPlotsCategory);
+
+        return (double)leasedPlotsCategory/totalLeasedPlots * 100;
     }
 }
