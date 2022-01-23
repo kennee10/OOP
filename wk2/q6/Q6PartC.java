@@ -45,10 +45,24 @@ public class Q6PartC {
      */
     public static String getFarmerDetails(CommunityGarden garden, int plotNumber) {
         // insert your code here.
-        CommunityGarden myGarden = garden.getPlot(plotNumber);
-        System.out.println(myGarden);
-        return ""; // added to make this code compile.
-
+        Plot myPlot = garden.getPlot(plotNumber);
+        if (myPlot == null) {
+            return "N.A.";
+        } else {
+            Farmer myFarmer = myPlot.getFarmer();
+            if (myFarmer == null) {
+                return "available";
+            } else {
+                String farmerName = myFarmer.getName();
+                char farmerGender = myFarmer.getGender();
+                String farmerGenderFull = "";
+                if (farmerGender == 'M') {
+                    farmerGenderFull = "Male";
+                } else {
+                    farmerGenderFull = "Female";
+                }
+                return farmerName + "[" + farmerGenderFull + "]";
+            }
+        }
     }
-
 }

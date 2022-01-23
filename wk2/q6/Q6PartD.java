@@ -38,6 +38,5 @@ public class Q6PartD {
     public static double getPercentageOfLeasedPlotsWithCrop(CommunityGarden garden, char category) {
         // insert your code here.
         return 0.0;
-       
     }
 }

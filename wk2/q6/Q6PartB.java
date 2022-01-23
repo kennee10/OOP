@@ -28,7 +28,6 @@ public class Q6PartB {
         // insert your code here.
         int greaterArea = garden.getNumPlotsWithAreaGreaterOrEqualTo(area);
         return garden.getTotalPlots() - greaterArea;
-
     }
 
 }
