@@ -15,6 +15,7 @@ public class BubbleTeaTest {
         } else {
             System.out.println(cup.getBrand() + " is low in sugar");
         }
+
     }
 
     public static void displaySweetnessComparison(BubbleTea cup1, BubbleTea cup2) {
@@ -23,6 +24,7 @@ public class BubbleTeaTest {
         } else {
             System.out.println(cup2.getBrand() + " is sweeter than " + cup1.getBrand());
         }
+
     }
 
 
