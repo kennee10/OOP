@@ -1,1 +1,1 @@
-javac -sourcepath src src/EmployeeTest.java
+javac -d classes -sourcepath src src/EmployeeTest.java
