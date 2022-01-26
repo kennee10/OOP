@@ -41,3 +41,9 @@ public class TicketUtilityTest {
 
     }
 }
+
+public class TicketUtility {
+    public static double calculateAverageTicketPrice(ArrayList<Ticket> ticketList) {
+
+    }
+}

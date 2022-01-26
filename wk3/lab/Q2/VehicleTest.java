@@ -1,31 +1,9 @@
 public class VehicleTest {
     public static void main(String[] args) {
-        Motorcycle m = new Motorcyle(200);
-    }
-}
+        Motorcycle m = new Motorcycle(200);
+        System.out.println(m.toString());
 
-class Vehicle {
-    private int numWheels;
-    private double distancePerLiter;
-
-    public Vehicle(int numWheels, double distancePerLiter) {
-        this.numWheels = numWheels;
-        this.distancePerLiter = distancePerLiter;
-    }
-
-    public String toString() {
-        return "Vehicle[numWheels=" + this.numWheels + ", distancePerLiter=" + this.distancePerLiter + "]";
-    }
-}
-
-class Motorcycle extends Vehicle {
-    public Motorcycle(double distancePerLiter) {
-        super(2, distancePerLiter);
-    }
-}
-
-class Car extends Vehicle {
-    public Car(double distancePerLiter) {
-        super(4, distancePerLiter);
+        Car c = new Car(100);
+        System.out.println(c.toString());
     }
 }
