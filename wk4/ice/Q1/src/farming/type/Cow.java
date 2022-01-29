@@ -1,3 +1,4 @@
+package farming.type;
 
 public class Cow implements Animal {
     @Override

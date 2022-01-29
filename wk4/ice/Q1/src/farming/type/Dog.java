@@ -1,3 +1,4 @@
+package farming.type;
 
 public class Dog implements Animal {
     public void makeNoise() {
