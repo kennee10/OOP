@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class TicketUtilityTest {
     public static void main(String[] args) {
         ArrayList<Ticket> tickets = new ArrayList<Ticket>();
