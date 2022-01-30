@@ -38,12 +38,5 @@ public class TicketUtilityTest {
         System.out.println("Test 3:");
         System.out.println("Expected: 6.271");
         System.out.println("Actual  : " + TicketUtility.calculateAverageTicketPrice(tickets));
-
-    }
-}
-
-public class TicketUtility {
-    public static double calculateAverageTicketPrice(ArrayList<Ticket> ticketList) {
-
     }
 }
