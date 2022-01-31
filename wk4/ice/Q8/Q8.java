@@ -1,17 +1,17 @@
+public class Q8<T> {
+    private T t;
 
-public class Q8 {
-    private String t;
-
-    public void set(String t) { this.t = t; }
-    public String get() { return t; }
+    public void set(T t) { this.t = t; }
+    public T get() { return t; }
 
 
     public static void main(String[] args) {
-        Q8 example = new Q8();
-        example.set("Ah Seng");
+        // Q8 example = new Q8();
+        Q8<Integer> example = new Q8<Integer>();
+        example.set(8);
         
-        String value = example.get();
-        System.out.println(value);
+        // String value = example.get();
+        System.out.println(example.get());
         
     }
 }
