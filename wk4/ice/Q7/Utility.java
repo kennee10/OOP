@@ -1,11 +1,11 @@
 import java.util.*;
 
 public class Utility {
-    public static void doSomething(List<Animal> aList) {
+    public static void doSomething(List<? extends Animal> aList) {
         for (Animal a : aList) {
             a.saySomething();
         }
-        //aList.add(new Dog("pussy")); 
+        // aList.add(new Dog("pussy"));
     }
 
     public static void main(String[] args) {
