@@ -1,4 +1,6 @@
-public class Octagon {
+import java.lang.Math;
+
+public class Octagon implements Shape {
     private double side;
 
     public Octagon(double side) {
@@ -10,6 +12,20 @@ public class Octagon {
     }
 
     public double getArea() {
-        return side*side * (2+2); // !!complete this
+        return Math.pow(side,2) * (2+2*Math.sqrt(2));
+    }
+
+    public double getPerimeter() {
+        return side * 8;
+    }
+
+    public String toString() {
+        return "return what string?";
+    }
+
+    public static void main(String[] args) {
+        Octagon my_oct = new Octagon(12);
+        System.out.println(my_oct.getArea());
+        System.out.println(my_oct.getPerimeter());
     }
 }
