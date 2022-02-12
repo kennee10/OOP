@@ -21,26 +21,26 @@ public class ShapeUtilityTest {
 
 
         System.out.println("Test getLargestOctagon:");
-        System.out.println(ShapeUtility.getLargestOctagon(null));
-        System.out.println(ShapeUtility.getLargestOctagon(new ArrayList<Shape>()));
+        // System.out.println(ShapeUtility.getLargestOctagon(null));
+        // System.out.println(ShapeUtility.getLargestOctagon(new ArrayList<Shape>()));
         System.out.println(ShapeUtility.getLargestOctagon(shapeList));
 
-        System.out.println();
-        System.out.println("Test getAllNonRectangles:");
-        System.out.println(ShapeUtility.getAllNonRectangles(null));
-        System.out.println(ShapeUtility.getAllNonRectangles(new ArrayList<Shape>()));
-        System.out.println(ShapeUtility.getAllNonRectangles(shapeList));
+        // System.out.println();
+        // System.out.println("Test getAllNonRectangles:");
+        // System.out.println(ShapeUtility.getAllNonRectangles(null));
+        // System.out.println(ShapeUtility.getAllNonRectangles(new ArrayList<Shape>()));
+        // System.out.println(ShapeUtility.getAllNonRectangles(shapeList));
 
-        System.out.println();
-        System.out.println("Test getAllSquareWithMinArea:");
-        System.out.println(ShapeUtility.getAllSquareWithMinArea(null, 20));
-        System.out.println(ShapeUtility.getAllSquareWithMinArea(new ArrayList<Shape>(), 20));
-        System.out.println(ShapeUtility.getAllSquareWithMinArea(shapeList, 20));
+        // System.out.println();
+        // System.out.println("Test getAllSquareWithMinArea:");
+        // System.out.println(ShapeUtility.getAllSquareWithMinArea(null, 20));
+        // System.out.println(ShapeUtility.getAllSquareWithMinArea(new ArrayList<Shape>(), 20));
+        // System.out.println(ShapeUtility.getAllSquareWithMinArea(shapeList, 20));
 
-        System.out.println();
-        System.out.println("Test getAllRectangleWithMinLength:");
-        System.out.println(ShapeUtility.getAllRectangleWithMinLength(null, 6));
-        System.out.println(ShapeUtility.getAllRectangleWithMinLength(new ArrayList<Shape>(), 6));
-        System.out.println(ShapeUtility.getAllRectangleWithMinLength(shapeList, 6));
+        // System.out.println();
+        // System.out.println("Test getAllRectangleWithMinLength:");
+        // System.out.println(ShapeUtility.getAllRectangleWithMinLength(null, 6));
+        // System.out.println(ShapeUtility.getAllRectangleWithMinLength(new ArrayList<Shape>(), 6));
+        // System.out.println(ShapeUtility.getAllRectangleWithMinLength(shapeList, 6));
     }
 }
