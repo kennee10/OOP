@@ -9,3 +9,4 @@ public class Test {
         System.out.printf("%d%n", 2);
     }
 }
+
