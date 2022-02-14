@@ -103,9 +103,9 @@
 }
         
 {
-         "source": 
-
-         {
+    "source": 
+    [
+        {
             "field_name": "type",
             "field_validation": "required|in:partner",
             "field_type": "hidden",
@@ -219,7 +219,7 @@
             "field_display_name": "",
             "excel_field_display_name": "Remitter Segment"
         },
-       {
+        {
             "field_name": "currency",
             "field_validation": "required|in:PHP",
             "field_type": "hidden",
@@ -235,11 +235,12 @@
             "field_display_name": "Amount",
             "excel_field_display_name": "Destination Amount"
         }
+    ]
 }
 
 {
 "destination":
-{
+[{
             "field_name": "type",
             "field_validation": "required|in:bank_account",
             "field_type": "hidden",
@@ -375,12 +376,12 @@
             "field_value": "",
             "field_display_name": "Bank Account Number",
             "excel_field_display_name": "Recipient Account Number"
-        }
+        }]
 }
 
 {
 "destination_amount":
-        {
+        [{
             "field_name": "currency",
             "field_validation": "required|in:PHP",
             "field_type": "hidden",
@@ -395,5 +396,5 @@
             "field_value": "",
             "field_display_name": "Amount",
             "excel_field_display_name": "Destination Amount"
-        }
+        }]
 }
