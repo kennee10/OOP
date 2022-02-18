@@ -1,10 +1,13 @@
-import java.awt.Shape;
 import java.util.ArrayList;
 
 public class ShapeUtility {
     public static Octagon getLargestOctagon(ArrayList<Shape> shapeList) {
         double area = 0;
         int int_to_return=0;
+
+        if (shapeList == null || shapeList.size() == 0) {
+            return null;
+        }
 
         for (int i = 0; i < shapeList.size(); i++) {
             Shape curr_obj = shapeList.get(i);

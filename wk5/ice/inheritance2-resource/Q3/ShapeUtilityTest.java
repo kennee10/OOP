@@ -21,8 +21,8 @@ public class ShapeUtilityTest {
 
 
         System.out.println("Test getLargestOctagon:");
-        // System.out.println(ShapeUtility.getLargestOctagon(null));
-        // System.out.println(ShapeUtility.getLargestOctagon(new ArrayList<Shape>()));
+        System.out.println(ShapeUtility.getLargestOctagon(null));
+        System.out.println(ShapeUtility.getLargestOctagon(new ArrayList<Shape>()));
         System.out.println(ShapeUtility.getLargestOctagon(shapeList));
 
         // System.out.println();

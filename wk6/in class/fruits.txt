@@ -1,0 +1,4 @@
+apple,12
+orange,13
+pear,15
+durian,14
