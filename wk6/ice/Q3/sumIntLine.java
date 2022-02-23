@@ -1,11 +1,10 @@
 import java.util.*;
 import java.io.*;
 
-public class sumInt {
+public class sumIntLine {
     public static void main(String[] args) {
 
         boolean finding_file = true;
-        int total = 0;
 
         while (finding_file) {
             // ask for filename
@@ -15,15 +14,23 @@ public class sumInt {
 
             try (Scanner sc = new Scanner(new File(f+".txt"));) {
                 finding_file = false;
+                // looping through lines
                 while (sc.hasNext()) {
-                    String str = sc.next();
-                    total += Integer.parseInt(str);
+                    int total = 0;
+                    String line = sc.nextLine();
+                    
+                    // looping numbers within a line
+                    Scanner lineSc = new Scanner(line);
+                    lineSc.useDelimiter(",");
+                    while (lineSc.hasNext()) {
+                        String str = lineSc.next();
+                        total += Integer.parseInt(str);
+                    }
+                    System.out.println(total);
                 }
             } catch (FileNotFoundException e) {
                 System.out.println(f + " is invalid");
             }
         }
-        
-        System.out.println("The sum is " + total);
     }
 }
