@@ -12,7 +12,7 @@ public class InventoryApp {
             int products = 0;
             double totalCost = 0;
             while (sc.hasNext()) {
-                products += arr[0];
+                // products += arr[0];
                 
                 String line = sc.nextLine();
                 String[] arr = line.split(",");
