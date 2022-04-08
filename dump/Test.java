@@ -1,12 +1,11 @@
+// Test.java
 public class Test {
     public static void main(String[] args) {
+        Object o = new Fruit();
+        Fruit f = new Fruit();
 
-        // System.out.println('2' + '3');
-        // System.out.println(3/2);
-        // System.out.println(7/2 * 2.0);
-        // System.out.println(3.0 + '3');
-
-        System.out.printf("%d%n", 2);
+        System.out.print(o.equals(f));
+        System.out.println(f.equals(o));
+        
     }
 }
-

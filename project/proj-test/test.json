@@ -1,0 +1,52 @@
+{
+  "universalTerms": [
+    {
+      "universalTermId": "senderFirstName",
+      "universalTermName": "Sender First Name",
+      "description": "The first name of the sender"
+    },
+    {
+      "universalTermId": "senderLastName",
+      "universalTermName": "Sender Last Name",
+      "description": "The last name of the sender"
+    },
+    {
+      "universalTermId": "senderBankAccount",
+      "universalTermName": "Sender Bank Name",
+      "description": "The first name of the sender"
+    },
+    {
+      "universalTermId": "recipientBankAccount",
+      "universalTermName": "Recipient Bank Account",
+      "description": "The first name of the sender"
+    }
+  ]
+}
+
+// Onboarding
+// 1. Alias extraction
+// 2. Send mapped aliases
+
+// Remittance Dashboard
+// 1. Send csv file
+// 2. Get Job status (constant query)
+// 3. Get Transaction status (constant query)
+
+// Request to map alias 
+{   
+    "customerId": 001,
+    "aliasMap": [
+        {
+            "aliasId": "f_name",
+            "universalTermId": "senderFirstName"
+        },
+        {
+            "aliasId": "l_name",
+            "universalTermId": "senderLastName"
+        },
+        {
+            "aliasId": "s_addr",
+            "universalTermId": "senderAddress"
+        }
+    ]
+}
