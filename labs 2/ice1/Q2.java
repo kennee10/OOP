@@ -14,6 +14,7 @@ public class Q2 {
             System.out.print("Enter second word:");
             String word2 = sc.nextLine();
 
+            // String indexing
             if (word1.charAt(0) == word2.charAt(0)) {
                 System.out.println("Bingo");
                 continueLoop = false;

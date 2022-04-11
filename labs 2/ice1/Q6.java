@@ -21,8 +21,30 @@ public class Q6 {
     // also prints out the alignment. See the sample runs of the 
     // program for exact output of this method.
     public static boolean matchStrings(String str1, String str2) {
-        // Modify the code below to return the correct value.
-        return false;
+        
+        // Hashmap (initializing)
+        Map<Character, Integer> map = new HashMap<>();
+        int currIndex = 0;
+        boolean match = false;
+
+        // Iterate char in string
+        for (int i=0; i < str2.length(); i++) {
+            char currChar_str2 = str2.charAt(i);
+
+            for (int j = currIndex; j < str1.length(); j++) {
+                if (currChar_str2 == str1.charAt(j)) {
+
+                    if (i == str2.length()-1) {
+                        match = true;
+                    }
+                    map.put(currChar_str2, j);
+                    currIndex = j+1;
+                }
+            }
+        }
+
+        // System.out.println(map);
+        return match;
     }
 
 }
